@@ -1,18 +1,29 @@
 <template>
   <div id="app">
    <headerComponent/>
-   <mainWithSliderComponent/>
-   <quvotesComponent/>
-   <thirdComponent/>
+   <section id="firstComponent">
+    <firstComponent/>
+  </section>
+  <section id="secondComponent">
+    <secondComponent/>
+  </section>
+  <section id="thirdComponent">
+    <thirdComponent/>
+  </section>
+  <section id="footerComponent">
+    <footerComponent/>
+  </section>
   </div>
   <router-view></router-view>
 </template>
 
 <script>
 import headerComponent from './components/headerComponent.vue'
-import mainWithSliderComponent from './components/firstComponent.vue'
-import quvotesComponent from './components/secondComponent.vue'
+import firstComponent from './components/firstComponent.vue'
+import secondComponent from './components/secondComponent.vue'
 import thirdComponent from './components/thirdComponent.vue'
+import footerComponent from './components/footerComponent.vue'
+
 export default ({
   data() {
     return{
@@ -21,9 +32,10 @@ export default ({
   },
   components: {
     headerComponent,
-    mainWithSliderComponent,
-    quvotesComponent,
-    thirdComponent
+    firstComponent,
+    secondComponent,
+    thirdComponent,
+    footerComponent
   },
 })
 </script>

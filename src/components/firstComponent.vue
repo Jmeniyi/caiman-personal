@@ -7,7 +7,7 @@
                         <li>
 
                             <a href="https://www.instagram.com/">
-                                <img class="button" src="../assets/img/logo-instagram.svg" alt="Instagram">
+                                <img src="../assets/img/logo-instagram.svg" alt="Instagram">
                             </a>
                         </li>
                         <li>

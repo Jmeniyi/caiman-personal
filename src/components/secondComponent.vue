@@ -13,6 +13,7 @@
             <img src="../assets/img/client5.png" alt="client5" height="25" width="130">
         </div>
     </div>
+    <router-view></router-view>
 </template>
   
 <script>
@@ -182,7 +183,7 @@ export default ({
     height: auto;
     width: 100%;
     position: absolute;
-    bottom: 5%;
+    bottom: 0%;
     left: 50%;
     transform: translateX(-50%);
     padding: 20px;

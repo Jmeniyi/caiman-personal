@@ -5,9 +5,10 @@
         </div>
         <div class="headerComponent__list">
             <ul class="headerComponent__list_ul">
-                <li>Home</li>
-                <li>Ouw Work</li>
-                <li>About Us</li>
+                <li><a @click="scrollTo('firstComponent')">Home</a></li>
+                <li><a @click="scrollTo('secondComponent')">About us</a></li>
+                <li><a @click="scrollTo('thirdComponent')">Our works</a></li>
+                <li><a @click="scrollTo('footerComponent')">Contacts</a></li>
             </ul>
         </div>
         <div class="headerComponent__rightMenu">
@@ -17,7 +18,18 @@
     </div>
 </template>
 
-<style>
+<script>
+export default {
+  methods: {
+    scrollTo(sectionId) {
+      const element = document.getElementById(sectionId);
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+};
+</script>
+
+<style scoped>
 .headerComponent {
     height: 100px;
     width: 100%;
